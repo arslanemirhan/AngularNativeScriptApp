@@ -1,10 +1,12 @@
+import { StylesCompileDependency } from "@angular/compiler";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: "Home",
-    templateUrl: "./home.component.html"
+    selector: "Login",
+    templateUrl: "./login.component.html",
+    styleUrls: ['./login-common.css' , 'login.css']
 })
-export class HomeComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
     constructor() {
         // Use the component constructor to inject providers.
