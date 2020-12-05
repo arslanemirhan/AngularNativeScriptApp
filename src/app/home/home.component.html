@@ -1,4 +1,23 @@
 <ActionBar>
-    <Label text="Home"></Label>
+    <Label text="Login Page"></Label>
 </ActionBar>
-<Image src="https://user-images.githubusercontent.com/544280/42960643-66d498ac-8b5a-11e8-8946-7224eefea6a5.jpg"></Image>
+<StackLayout>
+    <TextField hint="E-mail Address"
+           secure="false"
+           keyboardType="email"
+           returnKeyType="done"
+           (returnPress)="onReturnPress($event)"
+           autocorrect="false"
+           (focus)="onFocus($event)"
+           (blur)="onBlur($event)">
+    </TextField>
+    <TextField hint="Password"
+        secure="true"
+        returnKeyType="done"
+        (returnPress)="onReturnPress($event)"
+        autocorrect="false"
+        (focus)="onFocus($event)"
+        (blur)="onBlur($event)">
+    </TextField>
+    <Button text="Sign-in" class="-primary -rounded-lg" (tap)="onTap($event)"></Button>
+</StackLayout>
