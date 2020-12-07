@@ -1,7 +1,44 @@
 <ActionBar>
-    <Label text="Home"></Label>
+    <Label text="Home" style="color: black;"></Label>
 </ActionBar>
-<GridLayout>
-    <Image src="https://www.cbronline.com/wp-content/uploads/2016/06/what-is-URL-770x503.jpg" horizontalAlignment="center"></Image>
-    <Image src="res://icon" horizontalAlignment="center"></Image>
-</GridLayout>
+<FlexboxLayout flexDirection="column" width="100%" height="100%" backgroundColor="lightGray">
+    <StackLayout orientation="vertical" width="100%" height="88.8%" backgroundColor="white">
+        <Image src="https://www.cbronline.com/wp-content/uploads/2016/06/what-is-URL-770x503.jpg" height="35%" horizontalAlignment="center"></Image>
+        <Label text="INFORMATION FOR LOREM IPSUM" class="headerLabel" width="100%" height="10%" ></Label>
+        <Label [text] = "news" class="contentLabel" textWrap="true" width="100%" height="50%"></Label>
+      </StackLayout>
+      <BottomNavigation height="8%">
+        <TabStrip>
+            <TabStripItem (tap)="backToLogin()">
+                <Label text="Home"></Label>
+                <Image src="res://homepage"></Image>
+            </TabStripItem>
+            <TabStripItem (tap)="backToLogin()">
+                <Label text="Account"></Label>
+                <Image src="res://friends"></Image>
+            </TabStripItem>
+            <TabStripItem (tap)="backToLogin()">
+                <Label text="Search"></Label>
+                <Image src="res://search"></Image>
+            </TabStripItem>
+        </TabStrip>
+        <TabContentItem>
+            <GridLayout>
+                <Label text="Home Page" class="h2 text-center">
+                </Label>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <Label text="Settings Page" class="h2 text-center">
+                </Label>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <Label text="Search Page" class="h2 text-center">
+                </Label>
+            </GridLayout>
+        </TabContentItem>
+    </BottomNavigation>
+</FlexboxLayout>

@@ -1,28 +1,42 @@
 StackLayout{
-    margin-left: 30;
-    margin-right: 30;
-    padding-bottom: 15;
-    background-color: white;
+    margin: 10;
+
+}
+BottomNavigation{
+    height:"8%"
 }
 
 ActionBar{
-    background-color: green;
+    background-color: white;
 }
 Image{
-    margin-top: 5;
-    margin-bottom: 20;
-    width:100;
-    height:100;
-}
-Button, TextField
-{
-    margin-left: 16;
-    margin-right: 16;
+    margin-top: 25;
     margin-bottom: 10;
-    margin-top: 15;
 }
-.login-button{
-    background-color: green;
-    color: white;
-    margin-top: 0;
+.headerLabel{
+    text-align: center;
+    padding-top: 10;
+    padding-left: 30;
+    padding-right: 30;
+    font-weight: bold;
+    font-size: 20;
+}
+.contentLabel{
+    text-align: left;
+    padding-top: 20;
+    padding-left: 30;
+    padding-right: 15;
+    font-weight:normal;
+}
+TabStrip {
+    selected-item-color: brown;
+    un-selected-item-color: black;
+}
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
+}
+
+.t-36 {
+    font-size: 36;
 }
