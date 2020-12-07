@@ -7,7 +7,7 @@ This is where the vast majority of your CSS code goes. */
 
 
 Page {
-    background-color: white;
+    /* background-color: red; */
     font-size: 15;
 }
 TextField {

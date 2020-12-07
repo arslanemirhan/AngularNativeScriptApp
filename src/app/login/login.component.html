@@ -1,10 +1,12 @@
 <ActionBar>
     <Label text="Welcome to App"></Label>
 </ActionBar>
-<StackLayout>
+<StackLayout #container>
     <!-- <Image src="https://www.cbronline.com/wp-content/uploads/2016/06/what-is-URL-770x503.jpg" horizontalAlignment="center"></Image> -->
     <Image src="res://icon" horizontalAlignment="center"></Image>
     <TextField
+        id="username"
+        [(ngModel)]="username"
         hint="E-mail Address"
         secure="false"
         keyboardType="email"
@@ -15,6 +17,8 @@
         (blur)="onBlur($event)">
     </TextField>
     <TextField
+        id="password"
+        [(ngModel)]="password"
         hint="Password"
         secure="true"
         returnKeyType="done"
@@ -23,5 +27,5 @@
         (focus)="onFocus($event)"
         (blur)="onBlur($event)">
     </TextField>
-    <Button  text="Sign-in" class="-primary -rounded-lg login-button" (tap)="onTap($event)"></Button>
+    <Button  text= "Sign-in" class="-primary login-button" (tap)="submit()"></Button>
 </StackLayout>

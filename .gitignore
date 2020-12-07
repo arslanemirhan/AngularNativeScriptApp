@@ -31,3 +31,8 @@ typings/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+
+src/app/login/loginCopy.component.html
+src/app/login/loginCopy.component.ts
+src/app/shared/user/userCopy.service.ts
