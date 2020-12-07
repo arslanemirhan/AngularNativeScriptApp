@@ -6,7 +6,7 @@ StackLayout{
 }
 
 ActionBar{
-    background-color: green;
+    background-color: blue;
 }
 Image{
     margin-top: 5;
@@ -22,7 +22,11 @@ Button, TextField
     margin-top: 15;
 }
 .login-button{
-    background-color: green;
+    background-color: blue;
     color: white;
     margin-top: 0;
+}
+TextField {
+    padding: 10;
+    font-size: 13;
 }
